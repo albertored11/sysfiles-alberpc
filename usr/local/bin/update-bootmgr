@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mount /dev/sdb1 /mnt/windows
+cp -r /mnt/windows/EFI/Microsoft /boot/EFI
+umount /mnt/windows

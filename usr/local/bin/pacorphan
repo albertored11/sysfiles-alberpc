@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+usage() {
+    echo "usage: "$(basename "$0")" <pre/post>" >&2
+    exit 1
+}
+
+optdep() {
+    comm -13 <(pacman -Qtdq | sort) <(pacman -Qttdq | sort)
+}
+
+pre() {
+    rm -f /tmp/pacorphan-optdep.txt
+    optdep > /tmp/pacorphan-optdep.txt
+}
+
+post() {
+    count=$(pacman -Qtdq | wc -l)
+
+    if [[ $count == "0" ]]; then
+        :
+    elif [[ $count == "1" ]]; then
+        echo ">>> $count orphan found. Run pacman -Rs \$(pacman -Qtdq) in order to remove it. <<<"
+    else
+        echo ">>> $count orphans found. Run pacman -Rs \$(pacman -Qtdq) in order to remove them. <<<"
+    fi
+
+    if [[ -f /tmp/pacorphan-optdep.txt ]]; then
+        new_optdep=$(comm -13 /tmp/pacorphan-optdep.txt <(optdep))
+
+        if [[ ! -z $new_optdep ]]; then
+            echo ">>> The following packages are now just optional deps: <<<"
+            for pkg in $new_optdep; do
+                optdep=$(LANG=C pacman -Qi $pkg | grep "Optional For" | tr -s ' ' | cut -d ' ' -f4-)
+
+                echo "  $pkg"
+
+                for pkg1 in $optdep; do
+                    echo "    $pkg1: $(LANG=C pacman -Qi $pkg1 | grep "\b$pkg\b" | tr -s ' ' | sed 's/Optional Deps ://g' | cut -d ' ' -f3- | rev | cut -d ' ' -f2- | rev)"
+                done
+            done
+            echo ">>> Run pacman -Rs <pkg> in order to remove those which are not needed anymore. <<<"
+        fi
+
+        rm -f /tmp/pacorphan-optdep.txt
+    fi
+}
+
+case $1 in
+    pre)
+        pre
+    ;;
+    post)
+        post
+    ;;
+    *)
+        usage
+    ;;
+esac
