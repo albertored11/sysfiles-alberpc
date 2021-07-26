@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Saving list of optdeps...
+When = PreTransaction
+Exec = /usr/local/bin/pacorphan pre

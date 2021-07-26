@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Updating package lists...
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqen > /etc/pkglist-native.txt && /usr/bin/pacman -Qqem > /etc/pkglist-foreign.txt && /usr/bin/comm -13 <(pacman -Qqdt | sort) <(pacman -Qqdtt | sort) > /etc/pkglist-optdep.txt'
