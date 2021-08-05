@@ -103,7 +103,6 @@ sshfs
 steam
 sudo
 tealdeer
-telegram-desktop
 texinfo
 ttf-jetbrains-mono
 unclutter
