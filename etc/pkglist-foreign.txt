@@ -5,7 +5,6 @@ bfg
 citra-qt-git
 clion
 droidcam
-fisher
 giph
 i3lock-color
 intellij-idea-ultimate-edition

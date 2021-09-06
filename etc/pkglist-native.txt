@@ -25,6 +25,7 @@ file
 filezilla
 findutils
 fish
+fisher
 flameshot
 flex
 fzf
@@ -65,7 +66,6 @@ maim
 make
 man-db
 man-pages
-maven
 meld
 mpv
 namcap
