@@ -4,9 +4,11 @@ betterdiscordctl-git
 bfg
 citra-qt-git
 clion
+clipster
 droidcam
 giph
 i3lock-color
+imlib2-heic
 intellij-idea-ultimate-edition
 jflap
 libreoffice-extension-languagetool
@@ -28,9 +30,9 @@ systemd-boot-pacman-hook
 teamviewer
 tor-browser
 vim-dracula
+vim-sxhkdrc-git
 vim-youcompleteme-git
 visual-studio-code-bin
 xcursor-breeze
 xtitle
-yadm
 yay

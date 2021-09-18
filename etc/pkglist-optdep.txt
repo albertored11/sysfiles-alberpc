@@ -6,7 +6,6 @@ gst-libav
 gst-plugins-bad
 gvfs-mtp
 intellij-idea-ultimate-edition-jre
-libappindicator-gtk3
 linux-headers
 noto-fonts-cjk
 noto-fonts-emoji
