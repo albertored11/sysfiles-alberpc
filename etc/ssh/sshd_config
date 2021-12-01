@@ -121,3 +121,6 @@ Subsystem	sftp	/usr/lib/ssh/sftp-server
 #	AllowTcpForwarding no
 #	PermitTTY no
 #	ForceCommand cvs server
+
+Match Address 192.168.1.0/24,192.168.3.0/24
+    PasswordAuthentication yes
