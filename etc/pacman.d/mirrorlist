@@ -3,13 +3,13 @@
 ################################################################################
 
 # With:       reflector @/etc/xdg/reflector/reflector.conf
-# When:       2021-08-25 12:30:53 UTC
+# When:       2021-11-29 15:17:38 UTC
 # From:       https://archlinux.org/mirrors/status/json/
-# Retrieved:  2021-08-25 12:26:38 UTC
-# Last Check: 2021-08-25 12:13:27 UTC
+# Retrieved:  2021-11-29 15:17:29 UTC
+# Last Check: 2021-11-29 15:09:52 UTC
 
-Server = https://archlinux.thaller.ws/$repo/os/$arch
+Server = https://archlinux.mailtunnel.eu/$repo/os/$arch
+Server = https://phinau.de/arch/$repo/os/$arch
+Server = https://mirror.cyberbits.eu/archlinux/$repo/os/$arch
+Server = https://mirror.chaoticum.net/arch/$repo/os/$arch
 Server = https://mirror.telepoint.bg/archlinux/$repo/os/$arch
-Server = https://mirror.pseudoform.org/$repo/os/$arch
-Server = https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch
-Server = https://archimonde.ts.si/archlinux/$repo/os/$arch
