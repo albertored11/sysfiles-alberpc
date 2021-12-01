@@ -12,13 +12,14 @@ bluez
 bluez-utils
 bpytop
 bspwm
-calibre
 chromium
 clementine
 discord
+docker
 dunst
 exa
 fakeroot
+fd
 feh
 ffmpeg
 file
@@ -36,8 +37,10 @@ ghc
 gimp
 git
 gnome-keyring
+gpick
 grep
 groff
+gucharmap
 gzip
 htop
 hunspell-en_gb
@@ -72,7 +75,6 @@ namcap
 ncdu
 neofetch
 nextcloud-client
-ntfs-3g
 numlockx
 onefetch
 openssh
@@ -87,6 +89,12 @@ pkgstats
 playerctl
 pulseaudio
 python
+python-matplotlib
+python-numpy
+python-pandas
+python-pylint
+python-scikit-learn
+python-tweepy
 qbittorrent
 qt5ct
 ranger
@@ -94,6 +102,7 @@ rclone
 reflector
 ripgrep
 rofi
+ruby-bundler
 seahorse
 sed
 simplescreenrecorder
@@ -104,6 +113,8 @@ steam
 sudo
 tealdeer
 texinfo
+texlive-core
+texlive-latexextra
 ttf-jetbrains-mono
 unclutter
 unrar
