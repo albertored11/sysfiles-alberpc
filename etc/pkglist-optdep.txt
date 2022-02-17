@@ -1,9 +1,11 @@
+asp
 bash-completion
 clion-cmake
 clion-gdb
 clion-jre
 gst-libav
 gst-plugins-bad
+gst-plugins-good
 gvfs-mtp
 intellij-idea-ultimate-edition-jre
 libappindicator-gtk3
@@ -13,9 +15,6 @@ noto-fonts-emoji
 pkgfile
 pulseaudio-alsa
 pulseaudio-bluetooth
-python-jedi
-python-regex
-qt5-translations
 rsync
 sxhkd
 tk
