@@ -9,15 +9,14 @@ gst-plugins-good
 gvfs-mtp
 intellij-idea-ultimate-edition-jre
 libappindicator-gtk3
-linux-headers
 noto-fonts-cjk
 noto-fonts-emoji
 pkgfile
 pulseaudio-alsa
 pulseaudio-bluetooth
+python-regex
 rsync
 sxhkd
 tk
 ueberzug
-v4l2loopback-dkms
 zathura-pdf-mupdf

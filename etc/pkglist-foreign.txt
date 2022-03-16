@@ -15,7 +15,6 @@ jflex
 kvantum-theme-nordic-git
 libreoffice-extension-languagetool
 lyrics-in-terminal
-mon2cam-git
 nerd-fonts-jetbrains-mono
 nord-vim
 nordic-darker-theme-git

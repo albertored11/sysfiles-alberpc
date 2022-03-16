@@ -48,6 +48,7 @@ hunspell-en_us
 hunspell-es_es
 hyphen-en
 hyphen-es
+ifuse
 imagemagick
 intel-media-driver
 intel-ucode
@@ -75,7 +76,7 @@ namcap
 ncdu
 neofetch
 nextcloud-client
-numlockx
+npm
 onefetch
 openssh
 pacman
