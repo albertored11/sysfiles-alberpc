@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Check if running as root
+if [ $UID != "0" ]; then
+    echo "You must run this script as root." >&2
+    exit 1
+fi
+
+ml="/etc/pacman.d/mirrorlist"
+# Number of line where ALA mirror is in the mirrorlist
+alaln="$(awk '/archive\.archlinux\.org/ {print FNR}' "$ml")"
+date="$(date +"%Y/%m/%d")"
+
+# If ALA mirror is in the mirrorlist, remove it
+if [[ -n "$alaln" ]]; then
+    sed -i "${alaln}d" "$ml"
+fi
+
+# Append ALA mirror of today to the mirrorlist
+echo "Server = https://archive.archlinux.org/repos/$date/\$repo/os/\$arch" >> "$ml"

@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Adding Arch Linux Archive to mirrorlist...
+When = PostTransaction
+Exec = /etc/pacman.d/scripts/add-ala
