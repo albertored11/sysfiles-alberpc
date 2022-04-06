@@ -5,11 +5,13 @@ bsptab-git
 citra-qt-git
 clion
 clipster
+cup
 giph
 google-chrome
 i3lock-color
 imlib2-heic
 intellij-idea-ultimate-edition
+javacc
 jflap
 jflex
 kvantum-theme-nordic-git
@@ -32,7 +34,6 @@ subtitleedit
 systemd-boot-pacman-hook
 tabbed-flexipatch-git
 tor-browser
-vim-dracula
 vim-sxhkdrc-git
 vim-youcompleteme-git
 visual-studio-code-bin

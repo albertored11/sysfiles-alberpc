@@ -16,6 +16,7 @@ clementine
 discord
 docker
 docker-compose
+dua-cli
 dunst
 exa
 fakeroot
@@ -73,7 +74,6 @@ man-pages
 meld
 mpv
 namcap
-ncdu
 neofetch
 nextcloud-client
 npm
@@ -96,6 +96,7 @@ python-virtualenv
 qbittorrent
 qt5ct
 qt6ct
+qutebrowser
 ranger
 rclone
 reflector
