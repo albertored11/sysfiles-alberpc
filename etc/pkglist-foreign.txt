@@ -9,6 +9,7 @@ cup
 giph
 google-chrome
 i3lock-color
+ifuse-git
 imlib2-heic
 intellij-idea-ultimate-edition
 javacc

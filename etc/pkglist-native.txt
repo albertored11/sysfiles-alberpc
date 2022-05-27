@@ -50,7 +50,6 @@ hunspell-en_us
 hunspell-es_es
 hyphen-en
 hyphen-es
-ifuse
 imagemagick
 intel-media-driver
 intel-ucode
@@ -77,6 +76,7 @@ mpv
 namcap
 neofetch
 nextcloud-client
+noto-fonts
 npm
 onefetch
 openssh
