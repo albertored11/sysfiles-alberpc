@@ -37,6 +37,7 @@ gettext
 ghc
 gimp
 git
+glow
 gnome-keyring
 gpick
 grep
