@@ -10,8 +10,8 @@ binutils
 bison
 bluez
 bluez-utils
-bpytop
 bspwm
+btop
 clementine
 discord
 docker
