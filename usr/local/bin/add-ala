@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+server="Server = https://archive.archlinux.org/packages/.all"
+ml="/etc/pacman.d/mirrorlist"
+
+grep -Fq "$server" "$ml" || echo "$server" >> "$ml"
