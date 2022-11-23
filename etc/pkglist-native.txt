@@ -37,8 +37,10 @@ gettext
 ghc
 gimp
 git
+github-cli
 glow
 gnome-keyring
+gnu-netcat
 gpick
 grep
 groff
@@ -90,6 +92,7 @@ picom
 pkgconf
 pkgstats
 playerctl
+polybar
 pulseaudio
 python
 python-pylint
@@ -143,5 +146,6 @@ xorg-xwininfo
 xournalpp
 yadm
 youtube-dl
+yq
 zathura
 zip
